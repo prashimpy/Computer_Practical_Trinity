@@ -4,17 +4,20 @@
 #include<conio.h>
 int main(){
 	
+	printf("Author: \t Prashim Timsina. \n");
+	printf("Program: \t Save and print data from a file.\n\n");
+	
 	FILE *p;
 	char a;
 
-	p = fopen("file.txt","w");
+	p = fopen("file1.txt","w");
 	
 	printf("Enter data to be inputted: \n");
 	while((a=getchar())!=EOF){
 		putc(a,p);
 	}
 	fclose(p);
-	printf("Outputted data:\n");
+	printf("\nOutputted data:\n");
 	p = fopen("file1.txt","r");
 	while((a=getc(p))!=EOF){
 		putchar(a);
