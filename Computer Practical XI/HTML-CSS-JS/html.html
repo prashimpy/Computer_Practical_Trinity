@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My HTML/CSS Example</title>
+	<style type="text/css">
+		/* CSS introduction */
+		h1 {
+			color: blue;
+			text-align: center;
+		}
+
+		/* CSS working methods */
+		/* inline */
+		span {
+			font-weight: bold;
+		}
+
+		/* internal */
+		style {
+			color: red;
+		}
+
+		/* external */
+		/* style.css file */
+
+		/* CSS syntax with selectors */
+		/* id */
+		#main {
+			background-color: yellow;
+			border: 1px solid black;
+			padding: 10px;
+		}
+
+		/* element */
+		p {
+			margin-bottom: 20px;
+		}
+
+		/* class */
+		.intro {
+			font-size: 18px;
+		}
+
+		/* grouping */
+		h2, h3 {
+			color: green;
+			margin-top: 30px;
+			margin-bottom: 10px;
+		}
+
+		/* universal */
+		* {
+			box-sizing: border-box;
+		}
+
+		/* CSS comments */
+		/* this is a comment */
+
+		/* Styling the html page with CSS */
+		/* Use different elements with attributes */
+		/* Height, width */
+		img {
+			height: 200px;
+			width: 200px;
+		}
+
+		/* background */
+		body {
+			background-color: lightgray;
+		}
+
+		/* text-align */
+		p {
+			text-align: justify;
+		}
+
+		/* font size */
+		h1 {
+			font-size: 36px;
+		}
+
+		/* borders */
+		.intro {
+			border: 2px solid black;
+			padding: 10px;
+		}
+
+		/* margin */
+		p {
+			margin: 10px;
+		}
+
+		/* padding */
+		#main {
+			padding: 20px;
+		}
+
+		/* float */
+		.left {
+			float: left;
+			margin-right: 10px;
+		}
+
+		.right {
+			float: right;
+			margin-left: 10px;
+		}
+
+		/* navigation */
+		nav {
+			background-color: navy;
+			color: white;
+			padding: 10px;
+			text-align: center;
+		}
+
+		nav a {
+			color: white;
+			text-decoration: none;
+			margin-right: 20px;
+		}
+
+		/* text decoration */
+		a {
+			text-decoration: none;
+			color: blue;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		/* inline/block */
+		span {
+			display: inline-block;
+			width: 100px;
+			background-color: yellow;
+			padding: 10px;
+			margin-right: 10px;
+		}
+
+		span:last-child {
+			margin-right: 0;
+		}
+
+	</style>
+</head>
+<body>
+	<header>
+		<h1>My HTML/CSS Example</h1>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Contact</a>
+		</nav>
+	</header>
+	<main>
+		<div id="main">
+			<h2>Welcome to my website</h2>
+			<p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet risus quis ipsum luctus</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet risus quis ipsum luctus consequat sed ac eros. Nullam quis risus auctor, faucibus ligula vitae, pharetra nisi. Integer eu risus nec enim commodo faucibus.</p>
+			<img src="https://via.placeholder.com/200" alt="placeholder image">
+			<div class="intro">This is an introduction.</div>
+			<h3>Heading Three</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet risus quis ipsum luctus consequat sed ac eros.</p>
+			<h3>Another Heading Three</h3>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet risus quis ipsum luctus consequat sed ac eros.</p>
+			<span>Span 1</span>
+			<span>Span 2</span>
+			<span>Span 3</span>
+			<div class="left">
+				<p>Left Column</p>
+			</div>
+			<div class="right">
+				<p>Right Column</p>
+			</div>
+		</div>
+	</main>
+	<footer>
+		<p>&copy; 2023 My Company</p>
+	</footer>
+</body>
+</html>
