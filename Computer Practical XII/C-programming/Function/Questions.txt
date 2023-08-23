@@ -1,0 +1,10 @@
+Lab works-1(functions)
+1. WAP to find sum of two numbers using function named sum().
+2. WAP to know a number is even or odd usingfunction named evenodd().
+3. WAP to print the greatest value among threenumbers using a function int great().We have to use return statement.
+4. WAP to know a number is prime or composite usingfunction.
+5. WAP to find sum of series 1,2,3,…..200 usingfunction. Assume yourself function name. It returns aninteger value.
+6. WAP to input elements of an array and print themwith their sum. Suppose, the array is one dimensional and is of void type andfunction to be used is array_elements().
+7. Suppose a function void matrix_sum(int a[][],intb[][]).Here, we have passed array as parameter. Use this function to find sumof matrices.
+8. WAP to sort ‘n’ number of strings usingfunction. Pass strings as parameter.
+9. WAP to find factorial value of a number usingrecursive function.
