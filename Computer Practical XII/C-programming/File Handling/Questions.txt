@@ -17,3 +17,5 @@ Then read contents of data file and print them on screen. Use fscanf() function.
 7. WAP to show the concept of rename() and remove() functions.
 
 8. WAP to show concept of ftell(), fseek() and rewind()  functions.
+
+

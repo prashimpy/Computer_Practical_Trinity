@@ -17,7 +17,9 @@ int main(){
 	int pr;
 	
 	p = fopen("file4.txt","w");
-	
+	printf("-----------------------\n");
+	printf("Enter data in file.... \n");
+	printf("-----------------------\n");
 	do{
 		printf("\n");
 		
@@ -44,7 +46,9 @@ int main(){
 	
 	p = fopen("file4.txt","r");
 	
-	printf("\n\nPrinting Data...\n\n");
+	printf("\n---------------------------");
+	printf("\nThe Outputted data is.... \n");
+	printf("---------------------------\n");
 	printf("Name\t\tEdition\t\tPrice\n");
 	printf("-------------------------------------------\n");
 	

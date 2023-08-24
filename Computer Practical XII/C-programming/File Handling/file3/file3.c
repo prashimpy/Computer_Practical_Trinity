@@ -23,7 +23,9 @@ int main(){
 	
 	fclose(p);
 	
-	printf("Printing Data...\n\n");
+	printf("----------------\n");
+	printf("Printing Data...\n");
+	printf("----------------\n\n");
 	p = fopen("file3.txt","r");
 	fscanf(p,"%s",n);
 	fscanf(p,"%s",a);
