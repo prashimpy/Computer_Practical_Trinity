@@ -49,9 +49,11 @@ int main(){
 	fclose(p);
 	
 	p = fopen("file5.txt","r");
+	
 	printf("\n---------------------------");
 	printf("\nThe Outputted data is.... \n");
 	printf("---------------------------\n");
+	
 	while(fread(&e, sizeof(struct employee),1, p)){
 		printf("\nName: %s",e.n);
 		printf("\nDesignation: %s",e.d);
