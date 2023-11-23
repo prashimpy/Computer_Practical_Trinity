@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+
+        document.write("Author: Prashim Timsina");
+		document.write("<BR>"+"Program: Even or Odd"+"<BR>"+"<BR>");
+
+
+        function eligibility(){
+            let a, b;
+            a = document.getElementById('age').value;
+            b = document.getElementById('name').value;
+            if(a>=18){
+                alert(b + " You can vote");
+            }
+            else {
+                alert(b + " You cannot vote")
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <h2>Check Your Eligibility</h2>
+    <form action="POST">
+        Name: <input type="text" id ="name"><br><br>
+        Age: <input type="number" id="age"><br><br>
+        <input type="button" onclick="eligibility()" value="Vote">
+    </form>
+</body>
+</html>

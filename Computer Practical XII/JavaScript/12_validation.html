@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        document.write("Author: Prashim Timsina");
+		document.write("<BR>"+"Program: Validation"+"<BR>"+"<BR>");
+
+        function validation(){
+            var a = document.getElementById("name").value;
+            var b = document.getElementById("grade").value;
+            var ae = document.getElementById("namerror");
+            var be = document.getElementById("graderror");
+            if (a.trim() === ""){
+                ae.textContent = "This field is required";
+                return false;
+            }
+            if (b.trim() === ""){
+                be.textContent = "This field is required";
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form id="myForm" onsubmit="return validation()">
+        Name: <input type="text" name="name" id="name">
+        <p id="namerror"></p>
+        Grade: <input type="number" name="grade" id="grade">
+        <p id="graderror"></p>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

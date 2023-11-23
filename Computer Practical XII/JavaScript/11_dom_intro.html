@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.write("Author: Prashim Timsina");
+		document.write("<BR>"+"Program: Insert String"+"<BR>"+"<BR>");
+        function insertstring(){
+            var a = document.getElementById("input").value;
+            var b = document.getElementById("paragraph");
+            b.textContent = a;
+        }
+    </script>
+</head>
+<body>
+    <form id="myForm">
+        Inser a string <input type="text" id="input">
+        <button type="button" onclick="insertstring()">Insert String</button>
+    </form>
+    <p id="paragraph"></p>
+</body>
+</html>
