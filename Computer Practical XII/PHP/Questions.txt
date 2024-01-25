@@ -1,0 +1,70 @@
+// qn 1;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        echo "Author: Prashim Timsina <br>";
+        echo "Program: Sum <br> <br>";
+    ?>
+
+    <form method="POST"  name="myform">
+        Number: <input type="number" placeholder="Enter a number" name ="n">
+        <br><br>
+        Number: <input type="number" placeholder="Enter a number" name ="n2">
+        <br><br>
+        <input type="submit" name = "submit" value="sum" >
+        <br><br>
+    </form>
+
+    <?php
+        if(isset($_POST['submit'])){
+            extract($_POST);
+            echo "Sum of ". $n." + ".$n2." is ".  $n + $n2;
+        }
+    ?>
+</body>
+</html>
+
+
+//qn 2;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <?php
+        echo "Author: Prashim Timsina <br>";
+        echo "Program: Sum <br> <br>";
+    ?>
+
+    <form method="POST"  name="myform">
+        Number: <input type="number" placeholder="Enter a number" name ="n">
+        <br><br>
+        Number: <input type="number" placeholder="Enter a number" name ="n1">
+        <br><br>
+        <input type="submit" name = "submit" value="sum" >
+        <br><br>
+    </form>
+    <?php
+        if(isset($_POST['submit'])){
+            extract($_POST);
+            echo "Before Swap: <br>";
+            echo $n.", " . $n1."<br>";
+            echo "After Swap: <br>";
+            $temp = $n;
+            $n = $n1;
+            $n1 = $temp;
+            echo $n.", " . $n1;
+
+        }
+    ?>
+</body>
+</html>
